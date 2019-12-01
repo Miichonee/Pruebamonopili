@@ -11,10 +11,10 @@ public class Memepolimein extends JFrame
     static JTextArea infoConsole;
     JPanel playerAssetsPanel;
     static int turnCounter = 0;
-    JButton btnNextTurn;
-    JButton btnRollDice;
-    JButton btnPayRent;
-    JButton btnBuy;
+    JButton btnNextTurno;
+    JButton btnRollDadin;
+    JButton btnPagarRnt;
+    JButton btnPagar;
     JTextArea panelPlayer1TextArea;
     JTextArea panelPlayer2TextArea;
     Tablero Tableroenjuego;
