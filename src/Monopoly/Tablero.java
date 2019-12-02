@@ -41,17 +41,17 @@ public class Tablero extends JPanel
                 "Edificio Globant",
                 "UTN",
                 "Calle Shrek",
-                "Calle Shrek 2",
+                "CARCEL",
                 "Plaza Springboot",
                 "Avenida Walter White",
                 "Maxikiosco 'EL ESCOCES'",
                 "Libreria Roberto",
-                "Gotham City",
-                "Torre Osama",
+                "CARCEL 2.0",
+                        "Gotham City",
                 "Maxikiosco de Seba",
                 "Club Nocturno LIV",
                 "Plaza ZinjaI",
-                "Heladeria Ujujuy esta fria la taza",
+                "FORTUNA",
                 "Avenida El Bromas",
                 "Calle Probabilidades Thales",
                 "Puente Resistencia-Vilelas",
@@ -69,12 +69,124 @@ public class Tablero extends JPanel
         this.add(cuadro01);
         allCuadrantes.add(cuadro01);
 
+        Cuadrantes cuadro02 = new Cuadrantes(206,6,100,100,NombreCuadran[2],180);
+        this.add(cuadro02);
+        allCuadrantes.add(cuadro02);
+        Cuadrantesincomprables.add(cuadro02);
+
+        Cuadrantes cuadro03 = new Cuadrantes(306,6,100,100,NombreCuadran[3],180);
+        this.add(cuadro03);
+        allCuadrantes.add(cuadro03);
+
+        Cuadrantes cuadro04 = new Cuadrantes(406,6,100,100,NombreCuadran[4],180);
+        this.add(cuadro04);
+        allCuadrantes.add(cuadro04);
+
+        Cuadrantes cuadro05 = new Cuadrantes(506,6,100,100,NombreCuadran[5],-135);
+        this.add(cuadro05);
+        allCuadrantes.add(cuadro05);
+        Cuadrantesincomprables.add(cuadro05);
+
+        //Cuadrantes de la derecha
+
+        Cuadrantes cuadro06 = new Cuadrantes(506,106,100,100,NombreCuadran[6],-90);
+        this.add(cuadro06);
+        allCuadrantes.add(cuadro06);
+        Cuadrantesincomprables.add(cuadro06);
+
+        Cuadrantes cuadro07 = new Cuadrantes(506,206,100,100,NombreCuadran[7],-90);
+        this.add(cuadro07);
+        allCuadrantes.add(cuadro07);
+        Cuadrantesincomprables.add(cuadro07);
+
+        Cuadrantes cuadro08 = new Cuadrantes(506,306,100,100,NombreCuadran[8],-90);
+        this.add(cuadro08);
+        allCuadrantes.add(cuadro08);
+
+        Cuadrantes cuadro09 = new Cuadrantes(506,406,100,100,NombreCuadran[9],-90);
+        this.add(cuadro09);
+        allCuadrantes.add(cuadro09);
+
+        Cuadrantes cuadro10 = new Cuadrantes(506,506,100,100,NombreCuadran[10],-45);
+        this.add(cuadro10);
+        allCuadrantes.add(cuadro10);
+        Cuadrantesincomprables.add(cuadro10);
+
+        //Cuadrantes del fondo
+
+        Cuadrantes cuadro11 = new Cuadrantes(406,506,100,100,NombreCuadran[11],0);
+        this.add(cuadro11);
+        allCuadrantes.add(cuadro11);
+        Cuadrantesincomprables.add(cuadro11);
+
+        Cuadrantes cuadro12 = new Cuadrantes(306,506,100,100,NombreCuadran[12],0);
+        this.add(cuadro12);
+        allCuadrantes.add(cuadro12);
+        Cuadrantesincomprables.add(cuadro12);
+
+        Cuadrantes cuadro13 = new Cuadrantes(206,506,100,100,NombreCuadran[13],0);
+        this.add(cuadro13);
+        allCuadrantes.add(cuadro13);
+
+        Cuadrantes cuadro14 = new Cuadrantes(106,506,100,100,NombreCuadran[14],0);
+        this.add(cuadro14);
+        allCuadrantes.add(cuadro14);
+
+        Cuadrantes cuadro15 = new Cuadrantes(6,506,100,100,NombreCuadran[15],45);
+        this.add(cuadro15);
+        allCuadrantes.add(cuadro15);
+        Cuadrantesincomprables.add(cuadro15);
+
+        //Cuadrantes de la Izquierda
+
+        Cuadrantes cuadro16 = new Cuadrantes(6,406,100,100,NombreCuadran[16],90);
+        this.add(cuadro16);
+        allCuadrantes.add(cuadro16);
+        Cuadrantesincomprables.add(cuadro16);
+
+        Cuadrantes cuadro17 = new Cuadrantes(6,306,100,100,NombreCuadran[17],90);
+        this.add(cuadro17);
+        allCuadrantes.add(cuadro17);
+
+        Cuadrantes cuadro18 = new Cuadrantes(6,206,100,100,NombreCuadran[18],90);
+        this.add(cuadro18);
+        allCuadrantes.add(cuadro18);
+        Cuadrantesincomprables.add(cuadro18);
+
+        Cuadrantes cuadro19 = new Cuadrantes(6,106,100,100,NombreCuadran[19],90);
+        this.add(cuadro19);
+        allCuadrantes.add(cuadro19);
+
         //Seteo de los precios de las propiedades
         cuadro01.setPrecio(100);
+        cuadro03.setPrecio(100);
+
+        cuadro04.setPrecio(120);
+
+
+        cuadro08.setPrecio(150);
+        cuadro09.setPrecio(160);
+
+        cuadro13.setPrecio(180);
+        cuadro14.setPrecio(190);
+
+        cuadro17.setPrecio(200);
+        cuadro19.setPrecio(200);
         // Y asi con las demas
 
         //Seteo de los precios de las rentas
         cuadro01.setRentPrecio(10);
+        cuadro03.setRentPrecio(15);
+        cuadro04.setRentPrecio(15);
+
+        cuadro08.setRentPrecio(25);
+        cuadro09.setRentPrecio(25);
+
+        cuadro13.setRentPrecio(30);
+        cuadro14.setRentPrecio(25);
+
+        cuadro17.setRentPrecio(30);
+        cuadro19.setRentPrecio(35);
         // Y seguimos con cuadro 1 y 2 seteando
 
         // Aca creamos el tablero en si y dividimos las hileras para que quede de forma cuadrada
