@@ -41,16 +41,23 @@ public class Memepolimein extends JFrame
         Tableroenjuego.setBackground(new Color(51, 255, 153));
         layeredPane.add(Tableroenjuego, new Integer(0));
 
+        JPanel rightPanel = new JPanel();
+        rightPanel.setBackground(Color.BLACK);
+        rightPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
+        rightPanel.setBounds(634, 6, 419, 600);
+        contentIncluder.add(rightPanel);
+        rightPanel.setLayout(null);
+
 
         btnPagar = new JButton("Comprar");
         btnPagar.setBounds(81, 478, 117, 29);
-        rightPanel.add(botonComprar);
+        rightPanel.add(btnPagar);
         btnPagar.setEnabled(false);
 
         btnPagarRnt = new JButton("Pagar renta");
 
         btnPagarRnt.setBounds(210, 478, 117, 29);
-        rightPanel.add(botonPagarRenta);
+        rightPanel.add(btnPagarRnt);
         btnPagarRnt.setEnabled(false);
 
 
