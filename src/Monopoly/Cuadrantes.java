@@ -102,22 +102,22 @@ public class Cuadrantes extends JPanel {
         super.paintComponent(g);
         if(this.numb == 1 || this.numb == 3 || this.numb == 4) {
             g.drawRect(0, this.getHeight()-20, this.getWidth(), 20);
-            g.setColor(Color.BLUE);
+            g.setColor(Color.YELLOW);
             g.fillRect(0, this.getHeight()-20, this.getWidth(), 20);
         }
         if(this.numb == 6 || this.numb == 8 || this.numb == 9) {
             g.drawRect(0, 0, 20, this.getHeight());
-            g.setColor(Color.PINK);
+            g.setColor(Color.RED);
             g.fillRect(0, 0, 20, this.getHeight());
         }
         if(this.numb == 11 || this.numb == 13 || this.numb == 14) {
             g.drawRect(0, 0, this.getWidth(), 20);
-            g.setColor(Color.ORANGE);
+            g.setColor(Color.BLACK);
             g.fillRect(0, 0, this.getWidth(), 20);
         }
         if(this.numb == 16 || this.numb == 17 || this.numb == 19) {
             g.drawRect(this.getWidth()-20, 0, 20, this.getHeight());
-            g.setColor(Color.GREEN);
+            g.setColor(Color.CYAN);
             g.fillRect(this.getWidth()-20, 0, 20, this.getHeight());
         }
 

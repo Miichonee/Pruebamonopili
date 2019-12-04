@@ -20,6 +20,7 @@ public class Memepolimein extends JFrame
     Tablero Tableroenjuego;
 
 
+
     public Memepolimein()
     {
         //Aca creamos el tablero y la ventana en si para que se ejecute dentro de esos parametros
@@ -39,6 +40,20 @@ public class Memepolimein extends JFrame
         Tableroenjuego = new Tablero(6,6,612,612);
         Tableroenjuego.setBackground(new Color(51, 255, 153));
         layeredPane.add(Tableroenjuego, new Integer(0));
+
+
+        btnPagar = new JButton("Comprar");
+        btnPagar.setBounds(81, 478, 117, 29);
+        rightPanel.add(botonComprar);
+        btnPagar.setEnabled(false);
+
+        btnPagarRnt = new JButton("Pagar renta");
+
+        btnPagarRnt.setBounds(210, 478, 117, 29);
+        rightPanel.add(botonPagarRenta);
+        btnPagarRnt.setEnabled(false);
+
+
     }
 
     public static void main(String[] args)
